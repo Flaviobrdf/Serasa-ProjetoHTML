@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dark.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>infocity</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="cabecalho-logo">
+            <img src="./img/nav.png" width="300" />
+        </div>
+
+        <div class="cabecalho-header">
+            <b>INFOCITY</b>
+            <p>infocity@gmail.com</p>
+            <p>(61) 9900-0000</p>
+        </div>
+
+        <nav class="cabecalho-nave">
+            <a href="https://github.com/Flaviobrdf" target="_blank">
+                <img src= "./img/icones/github.png"> </img>
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank"> 
+                <img src= "./img/icones/facebook.png"> </img>
+            </a>
+
+            <button class="button-nave" id="nave-btn" >
+                <img src= "./img/icones/dark.png"> </img>
+            </button>
+        </nav>
+
+    </header>
+
+
+    <main class="main">
+        <section class="hero-menu">
+            <div class="hero-text">
+
+            <p>
+            <strong>INFOCITY</strong>
+                Periféricos para computador
+            </p>
+
+            </div>
+            <div class="hero-img">
+                <img class="img-logo" src="./img/partespc.jpg">
+            </div>
+
+        </section>
+
+        <section class="menu-about">
+            <div class="about-text">
+                <h2 class="about"> Somos uma empresa que visa suprir a necessidade</h2>
+                    <h2 class="about"> de periféricos para computadores dos nossos clientes.</h2>
+                    <h2 class="about"> Buscamos entender a necessidade na área de</h2>
+                    <h2 class="about"> quipamentos de informática daqueles que nos procuram.</h2>
+            </div>
+        </section>
+
+        <ul class="event-list">
+            <li class="event-item event-destaque">
+                <figure>
+                    <img src="./img/placavideo.jpg" alt="Placa de Vídeo." class="event-img">
+                    <figcaption class="legend">Adquira a mais nova placa de vídeo.</figcaption>
+                </figure>
+            </li>
+            <li class="event-item">
+                <figure>
+                    <img src="./img/AMD-Intel.jpg" alt="Processadores." class="event-img">
+                    <figcaption class="legend">Os processadores mais potentes do mercado.</figcaption>
+                </figure>
+            </li>
+
+            <li class="event-item">
+                <figure>
+                    <img src="./img/placamae.jpg" alt="Placa Mãe" class="event-img">
+                    <figcaption class="legend">As placas com as tecnologias mais atuais.</figcaption>
+                </figure>
+            </li>
+        </ul>
+
+    </main>
+
+
+
+    <footer class="footer">
+
+        <div class="footer-menu">
+            <span>&copy;2023 - INFOCITY. Todos os diteitos reservados.</span>
+
+        </div>
+    </footer>
+
+    <script>
+    
+    const button = document.getElementById("nave-btn");
+
+    button.addEventListener('click', function(){
+        let header = document.querySelector('.header');
+        let main = document.querySelector('.main');
+        let footer = document.querySelector('.footer');
+
+        header.classList.toggle('header-escuro');
+        main.classList.toggle('main-escuro');
+        footer.classList.toggle('footer-escuro');
+
+    })
+
+    </script>
+
+</body>
+
+</html>
